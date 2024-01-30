@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Leonidas p5.js Portfolio</title>
+  <link href="reset.css" rel="stylesheet" type="text/css" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@200;400;800&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.js"></script>
+  <script defer src="script.js"></script>
+
+  <!-- p5js scripts -->
+  <script defer src="algorithm_balls.js"></script>
+  <script defer src="algorithm_bee.js"></script>
+  <script defer src="algorithm_spider.js"></script>
+  <script defer src="algorithm_warped.js"></script>
+
+</head>
+
+<body>
+
+  <header class="main-header">
+    <div class="container">
+      <a href="/" class="header-logo nav-link">
+        p5.js Algorithms
+      </a>
+      <nav class="header-menu">
+        <ul>
+          <li>
+            <a href="/about.html" class="nav-link">
+              About
+            </a>
+          </li>
+          <li>
+            <a href="/kontext.html" class="nav-link">
+              Kontext
+            </a>
+          </li>
+          <li>
+            <a href="/#balls-item" class="nav-link">
+              Algorithmen
+            </a>
+          </li>
+          <li>
+            <a href="tribute/" class="nav-link">
+              Tribute-Page
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-content">
+    
+    <aside class="side-menu">
+      <ul>
+        <li class="menu-item">
+          <a href="#balls-item" class="text-link">Bouncy Balls</a> 
+        </li>
+        <li class="menu-item">
+          <a href="#bee-item" class="text-link">Crazy Bee</a> 
+        </li>
+        <li class="menu-item">
+          <a href="#buecher-item" class="text-link">Arbeiten mit Daten</a> 
+        </li>
+        <li class="menu-item">
+          <a href="#daytime-item" class="text-link">Day 'N Night</a> 
+        </li>
+        <li class="menu-item"> 
+          <a href="#mondrian-item" class="text-link">Tic Tac Toe</a> 
+        </li>
+        <li class="menu-item">
+          <a href="#spider-item" class="text-link">Spinnennetz</a> 
+        </li>
+        <li class="menu-item">
+          <a href="#spirale-item" class="text-link">Hypno</a> 
+        </li>
+        <li class="menu-item">  
+          <a href="#warped-item" class="text-link">Warped</a> 
+        </li>
+        <li class="menu-item">  
+          <a href="#yoda-item" class="text-link">Yoda and Vader b2b</a> 
+        </li>
+      </ul>
+    </aside>
+    
+    <section class="algorithms" id="algorithms">
+
+      <div class="arrow-hold">
+        <a onclick="goToPrevAnchor()">
+          <div id="prev-btn" class="arrow">PREV</div>
+        </a>
+        <a onclick="goToNextAnchor()">
+          <div id="next-btn" class="arrow">NEXT</div>
+        </a>
+      </div>
+
+
+      <div class="algorithms-hold">
+        <ul class="algorithms-grid">
+
+          <!-- BALLS -->
+          <li id="balls-item" class="algorithm-item">
+            <a name="balls-item" href="/algorithms/balls/" target="_blank">
+              <div class="algorithm-image">
+                <!-- <img src="./assets/thumbnails/algorithm-08.png" /> -->
+                <div id="algorithm_balls" class="canvas-hold"></div>
+                <div class="hover-chip"><p>hover-preview</p></div>
+              </a>
+            </div>
+            <div class="algorithm-content">
+              <h2 class="algorithm-title text-link">
+                Bouncy Balls
+              </h2>
+              <p class="algorithm-description">
+                Chaos oder Ordnung? Dieser Algorithmus ist das Ergebnis erster Übungen, in denen ich mich mit der Sprache vertraut gemacht habe und verschiedene Funktionalitäten von p5.js kennenzulernen. Dazu gehört unter anderem das Arbeiten mit Zufall und Bewegung, sowie die Herausforderung physikalisch realistisches Abprallen zu ermöglichen. Im Code selbst kann sogar mit Reibung gespielt werden.
+                Die Algorithmen unterscheiden sich deutlich mit variierenden Canvas-Formaten. Vorschau des Algorithmus via Hover.
+              </p>
+              <a href="/algorithms/balls/" class="show-algorithm-btn">Anzeigen</a>    
+            </div>
+          </li>
+
+          <!-- BEE -->
+          <li id="bee-item" class="algorithm-item">
+            <a name="bee-item" href="/algorithms/bee/" target="_blank">
+              <div class="algorithm-image">
+                <!-- <img src="./assets/thumbnails/algorithm-04.png" /> -->
+                <div id="algorithm_bee" class="canvas-hold"></div>
+                <div class="hover-chip"><p>hover-preview</p></div>
+              </div>
+            </a>
+            <div class="algorithm-content">
+              <h2 class="algorithm-title text-link">
+                Crazy Bee
+              </h2>
+              <p class="algorithm-description">
+                Eine sehr simple Übung bezüglich Perlin Noise resultiert in diesen Algorithmen, welcher an eine scheinbar zufällig umherschwirrende Biene erinnert. Der Algorithmus stoppt nach 3000 Frames, um ein angemessenes Ergebnis zu liefern.
+                Vorschau des Algorithmus via Hover.
+              </p>
+              <a href="/algorithms/bee/" class="show-algorithm-btn">Anzeigen</a>    
+            </div>
+          </li>
+
+          <!-- BUECHER -->
+          <li id="buecher-item" class="algorithm-item">
+            <a name="buecher-item" href="/algorithms/buecher/" target="_blank">
+              <div class="algorithm-image">
+                <img src="./assets/thumbnails/algorithm-03.png" />
+              </div>
+            </a>
+            <div class="algorithm-content">
+              <h2 class="algorithm-title text-link">
+                Arbeiten mit Daten
+              </h2>
+              <p class="algorithm-description">
+                Das (verhinderte?) Verblassen der im Dritten Reich verbotenen Bücher: Um das Arbeiten mit Daten in Verbindung mit p5.js zu erlernen, habe ich einen Datensatz über die im dritten Reich von den Nationalsozialisten verbotenen Büchern gefunden. Das angetsrebte vorsätzliche Vergessen der Werke wird durch ein visuelles Verblassen der Titel auf Papier dargestellt, sowie das verbundene Leid über visuelll starke Bluttropfen vermittelt.
+              </p>
+              <a href="/algorithms/buecher/" class="show-algorithm-btn">Anzeigen</a>
+            </div>
+          </li>
+
+          <!-- DAY N NIGHT -->
+          <li id="daytime-item" class="algorithm-item">
+            <a name="daytime-item" href="/algorithms/daytime/" target="_blank">
+              <div class="algorithm-image">
+                <img src="./assets/thumbnails/algorithm-07.png" />
+              </div>
+            </a>
+            <div class="algorithm-content">
+              <h2 class="algorithm-title text-link">
+                Day 'n Night
+              </h2>
+              <p class="algorithm-description">
+                Visualierung der Tages- oder Nachtzeit, um Arbeiten mit Conditionals zu erlernen. Als weitere Komplexitätsebene wird eine automatische Zeiterkennung integriert, sodass die Anzeige bei festgelegtem Sonnenuntergang in den Nachtmodus wechselt (die Vorschau ist statisch).
+              </p>
+              <a href="/algorithms/daytime/" class="show-algorithm-btn">Anzeigen</a>    
+            </div>
+          </li>
+
+          <!-- MONDRIAN -->
+          <li id="mondrian-item" class="algorithm-item">
+            <a name="mondrian-item" href="/algorithms/mondrian/" target="_blank">
+              <div class="algorithm-image">
+                <img src="./assets/thumbnails/algorithm-02.png" />
+              </div>
+            </a>
+            <div class="algorithm-content">
+              <h2 class="algorithm-title text-link">
+                Tic Tac Toe
+              </h2>
+              <p class="algorithm-description">
+                Wenn mann Tic Tac Toe gegen Piet Mondrian spielt - 
+                die Aufgabe einer kreativen Auseinandersetzung mit dem Spiel Tic Tac Toe 
+                mündete in eine zufällige Generierung von angepassten Mondrian Gemälden, 
+                welche durch die Hinzunahme von HTML und CSS in Szene gesetzt wird. Neu-Laden der Seite erzeugt ein neues Gemälde.
+              </p>
+              <a href="/algorithms/mondrian/" class="show-algorithm-btn">Anzeigen</a>
+            </div>
+          </li>
+          
+          <!-- SPIDER -->
+          <li id="spider-item" class="algorithm-item">
+            <a name="spider-item" href="/algorithms/spider/" target="_blank">
+              <div class="algorithm-image">
+                <!-- <img src="./assets/thumbnails/algorithm-05.png" /> -->
+                <div id="algorithm_spider" class="canvas-hold"></div>
+                <div class="hover-chip"><p>hover-preview</p></div>
+              </div>
+            </a>
+            <div class="algorithm-content">
+              <h2 class="algorithm-title text-link">
+                Spinnennetz
+              </h2>
+              <p class="algorithm-description">
+                Perlin-Noise basiertes kreisförmiges Netz, kreiert durch sich drehende, wandernde Geraden. Ein Zwischenresultat auf dem Weg zu "Yoda vs. Vader", welches in weitestem Sinne an Spinnennetze in Bäumen erinnern kann. Vorschau via Hover. 
+              </p>
+              <a href="/algorithms/spider/" class="show-algorithm-btn">Anzeigen</a>
+            </div>
+          </li>
+
+          <!-- SPIRALE -->
+          <li id="spirale-item" class="algorithm-item">
+            <a name="spirale-item" href="/algorithms/spirale/" target="_blank">
+              <div class="algorithm-image">
+                <img src="./assets/thumbnails/algorithm-09.png" />
+              </div>
+            </a>
+            <div class="algorithm-content">
+              <h2 class="algorithm-title text-link">
+                Hypno
+              </h2>
+              <p class="algorithm-description">
+                Eine der ersten selbstständigen Übungen, um den Umgang mit Farbe und Form und der Draw-Funktion zu erlernen. Die Spirale besteht aus stetig wachsenden und rotierenden, fast geschlossenen Kreisbögen, welche mit jedem Zyklus sich auch im Farbkreis des HSL Spektrums bewegen.
+              </p>
+            <a href="/algorithms/spirale/" class="show-algorithm-btn">Anzeigen</a>    
+            </div>
+          </li>
+
+          <!-- WARPED -->
+          <li id="warped-item" class="algorithm-item">
+            <a name="warped-item"href="/algorithms/warped/" target="_blank">
+              <div class="algorithm-image">
+                <!-- <img src="./assets/thumbnails/algorithm-06.png" /> -->
+                <div id="algorithm_warped" class="canvas-hold"></div>
+                <div class="hover-chip"><p>hover-preview</p></div>
+              </div>
+            </a>
+            <div class="algorithm-content">
+              <h2 class="algorithm-title text-link">
+                Warped
+              </h2>
+              <p class="algorithm-description">
+                Ein auf Perlin-Noise beruhendes Netz (auch als Punktraster verfügbar), welches sich langsam in mehrere Richtungen über den Bildschirm bewegt und verzerrt angetrieben von mehreren wachsenden und sinkenden Parametern. Dieser Algorithmus arbeitet an der Grenze des Möglichen, was die Rechenzeit pro Frame betrifft und kann weder schneller noch dichter gestrickt sein, was eine große Herausforderung bei der Entwicklung darstellte.
+              </p>
+              <a href="/algorithms/warped/" class="show-algorithm-btn">Anzeigen</a>
+            </div>
+          </li>
+
+          <!-- VADER vs YODA -->
+          <li id="yoda-item" class="algorithm-item">
+            <a name="yoda-item" href="/algorithms/concert/" target="_blank">
+              <div class="algorithm-image">
+                <img src="./assets/thumbnails/algorithm-01.png" />
+              </div>
+            </a>
+            <div class="algorithm-content">
+              <h2 class="algorithm-title text-link">
+                Yoda and Vader b2b
+              </h2>
+              <p class="algorithm-description">
+                Auf Perlin-Noise basierende Light Show beim Gig von Darth Yoda und Lil Vader. Eine Weiterentwicklung des Spinnenalgorithmus eingebettet in ein HTML und CSS Konzert-Setting erinnert die Lightshow des Konzerts an einen Kampf aus den Star Wars Filmen. Dieses Werk ist ein gutes Beispiel, wie die Eerlernten Fähigkeiten in der Realität Anwendung finden können. Eine kleine Limitation dieses Algorithmus stellen die schwach sichtbaren Rückstände früherer "Draw"-Zyklen dar, welche auf schwarzem Hintergrund auch mit anderen Blending Modes nicht verschwinden wollten.
+              </p>
+              <a href="/algorithms/concert/" class="show-algorithm-btn">Anzeigen</a>
+            </div>
+          </li>
+
+          
+
+          
+
+        </ul>
+      </div>
+    </section>
+
+  </main>
+  
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-text-hold">
+        2023 © Leonidas v. Bothmer
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
